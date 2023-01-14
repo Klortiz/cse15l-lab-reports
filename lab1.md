@@ -4,10 +4,9 @@
 
 ![image](https://user-images.githubusercontent.com/122419405/212500401-3d154f70-efa4-48fa-81aa-8fe2d4eab585.png)
 
-Buenas! I'm Kristhian Ortiz, and this is a tutorial about how to log into a course-specific account on ieng6.
-You'll have to go through this process every time you take a new class that requires you to access their computers remotely.
-
-Note: Make sure you have your class account ready to rock!
+Buenas! I'm Kristhian Ortiz, and this is a tutorial about how to log into a course-specific account on ieng6.  
+You'll have to go through this process every time you take a new class that requires you to access their computers remotely.  
+Note: Make sure your class account is ready to rock!
 
 ### 1) Installing VS Code and Git.
 
@@ -15,28 +14,27 @@ Note: Make sure you have your class account ready to rock!
 > 
 > Here's where to download [Git for Windows.](https://gitforwindows.org/)
 
-After downloading, open both files and follow the prompts so you have the actual applications installed.
+After downloading, open both files and follow the prompts so you have the actual applications installed.  
 Note: You need to login with an account for VS Code, I'd reccommend doing so with your class account.
 
-Next Step will be to migrate Git into VS Code so we can use them together.
+![image](https://user-images.githubusercontent.com/122419405/212501909-892b0b1a-667b-470e-8e68-253c75076278.png)
+
+
+Next Step will be to migrate Git into VS Code so we can use them together.  
 (Git is a terminal, so we're basically changing VS Code's terminal so it alligns with the class language).
+
 
 ### 2) Setting up Git in VS Code to access your class computer remotely - using ***ieng6***.
 
-(Technically, we're doing SSH - Secure Shell - which is a secure way to access computers remotely)
-> Open VS Code original terminal (so we can override it with git) using ``Ctrl + ` ``
-> 
-> Open Command Pallete using `Ctrl + Shift + P`
-> 
-> Type: `Select Default Profile.`
-> 
-> Select `Git Bash.`
+(Technically, we're doing SSH - Secure Shell - which is a secure way to access computers remotely).  
+* Open VS Code original terminal (so we can override it with git) using ``Ctrl + ` ``
+* Open Command Pallete using `Ctrl + Shift + P`
+* Type: `Select Default Profile.`
+* Select `Git Bash.`
 
-(You just set up Git terminal in VS Code!)
-
-> There's a `+` icon in the upper right hand corner of the VS Code original terminal, click it.
-> 
-> Select `Git Bash` to start using git terminal instead!
+#### You just set up Git terminal in VS Code!  
+There's a `+` icon in the upper right hand corner of the VS Code original terminal, click it.  
+Select `Git Bash` to start using git terminal instead!
 
 #### Now let's establish that remote connection!
 
