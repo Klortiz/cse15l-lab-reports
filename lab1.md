@@ -46,5 +46,15 @@ Select `Git Bash` to start using git terminal instead!
 Let's test that out!
 
 ### 3) Testing out some commands.
+Here's a list of some commands you can try with your computer (using VS Code original terminal), and with the class computer (using git bash).
+* cd
+* ls -lat
+* ls -a
+* pwd
+* cp
+* mkdir
+
+> To terminate connection simply type `Ctrl + D` or `exit`
+
 
 
