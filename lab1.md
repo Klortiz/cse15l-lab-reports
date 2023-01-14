@@ -5,7 +5,8 @@
 ![image](https://user-images.githubusercontent.com/122419405/212500401-3d154f70-efa4-48fa-81aa-8fe2d4eab585.png)
 
 Buenas! I'm Kristhian Ortiz, and this is a tutorial about how to log into a course-specific account on ieng6.
-You will have to go through this process every time you take a new class that requires you to access their folders remotely.
+You'll have to go through this process every time you take a new class that requires you to access their computers remotely.
+
 Note: Make sure you have your class account ready to rock!
 
 ### 1) Installing VS Code and Git.
@@ -30,9 +31,9 @@ Next Step will be to migrate Git into VS Code so we can use them together.
 > Type: `Select Default Profile.`
 > 
 > Select `Git Bash.`
-> 
-> (You just set up Git terminal in VS Code!)
-> 
+
+(You just set up Git terminal in VS Code!)
+
 > There's a `+` icon in the upper right hand corner of the VS Code original terminal, click it.
 > 
 > Select `Git Bash` to start using git terminal instead!
@@ -47,11 +48,8 @@ Next Step will be to migrate Git into VS Code so we can use them together.
 
 (Note that the password will not show, even if you think you're not typing, trust me, you are. Just invisibly type it and press enter).
 
-> 
-> 
-
-
-
+You are now logged into your class' computer!
+Let's test that out!
 
 ### 3) Testing out some commands.
 
