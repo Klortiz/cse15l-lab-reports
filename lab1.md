@@ -25,7 +25,28 @@ Next Step will be to migrate Git into VS Code so we can use them together.
 (Technically, we're doing SSH - Secure Shell - which is a secure way to access computers remotely)
 > Open VS Code original terminal (so we can override it with git) using ``Ctrl + ` ``
 > 
-> Type: `ssh [name of account]@***ieng6***.[domain].edu` (For me, it would be cse15lwi23aue@ieng6.ucsd.edu)
+> Open Command Pallete using `Ctrl + Shift + P`
+> 
+> Type: `Select Default Profile.`
+> 
+> Select `Git Bash.`
+> 
+> (You just set up Git terminal in VS Code!)
+> 
+> There's a `+` icon in the upper right hand corner of the VS Code original terminal, click it.
+> 
+> Select `Git Bash` to start using git terminal instead!
+
+#### Now let's establish that remote connection!
+
+> Type: `ssh [name of account]@***ieng6***.[domain].edu` (For me, it would be cse15lwi23aue@ieng6.ucsd.edu).
+
+(What u just typed creates a ssh connection from the name of account to the ieng6 server on the specified domain).
+
+> Type `yes` to affirm connection and log in with your password.
+
+(Note that the password will not show, even if you think you're not typing, trust me, you are. Just invisibly type it and press enter).
+
 > 
 > 
 
