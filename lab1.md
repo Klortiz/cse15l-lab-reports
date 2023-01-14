@@ -36,17 +36,13 @@ Next Step will be to migrate Git into VS Code so we can use them together.
 There's a `+` icon in the upper right hand corner of the VS Code original terminal, click it.  
 Select `Git Bash` to start using git terminal instead!
 
-#### Now let's establish that remote connection!
+#### Now let's establish that remote connection!  
+* Type: `ssh [name of account]@***ieng6***.[domain].edu` (For me, it would be cse15lwi23aue@ieng6.ucsd.edu).  
+(What u just typed creates a ssh connection from the name of account to the ieng6 server on the specified domain).  
+* Type `yes` to affirm connection and log in with your password.  
+(The password will not show, even if you think you're not typing, trust me, you are. Just invisibly type it and press enter).
 
-> Type: `ssh [name of account]@***ieng6***.[domain].edu` (For me, it would be cse15lwi23aue@ieng6.ucsd.edu).
-
-(What u just typed creates a ssh connection from the name of account to the ieng6 server on the specified domain).
-
-> Type `yes` to affirm connection and log in with your password.
-
-(Note that the password will not show, even if you think you're not typing, trust me, you are. Just invisibly type it and press enter).
-
-You are now logged into your class' computer!
+#### You are now logged into your class' computer!  
 Let's test that out!
 
 ### 3) Testing out some commands.
