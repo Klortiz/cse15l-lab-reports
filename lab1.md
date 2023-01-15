@@ -19,28 +19,38 @@ Note: You need to login with an account for VS Code, I'd reccommend doing so wit
 
 ![image](https://user-images.githubusercontent.com/122419405/212501909-892b0b1a-667b-470e-8e68-253c75076278.png)
 
-
 Next Step will be to migrate Git into VS Code so we can use them together.  
 (Git is a terminal, so we're basically changing VS Code's terminal so it alligns with the class language).
-
 
 ### 2) Setting up Git in VS Code to access your class computer remotely - using ***ieng6***.
 
 (Technically, we're doing SSH - Secure Shell - which is a secure way to access computers remotely).  
 * Open VS Code original terminal (so we can override it with git) using ``Ctrl + ` ``
 * Open Command Pallete using `Ctrl + Shift + P`
-* Type: `Select Default Profile.`
-* Select `Git Bash.`
+* Type: `Select Default Profile.`  
+
+![image](https://user-images.githubusercontent.com/122419405/212502441-55707948-a1b7-408a-8232-b2de330e0825.png)
+
+* Select `Git Bash.`  
+
+![image](https://user-images.githubusercontent.com/122419405/212502453-34d9ed02-8540-48c7-b496-2887af74a2fa.png)
 
 #### You just set up Git terminal in VS Code!  
-There's a `+` icon in the upper right hand corner of the VS Code original terminal, click it.  
+There's a `dropdown` next to the `+` icon in the upper right hand corner of the VS Code original terminal, click it.  
 Select `Git Bash` to start using git terminal instead!
+
+![image](https://user-images.githubusercontent.com/122419405/212502487-36cd01c9-91c3-4f60-a5de-4ac8e86552bc.png)
+
 
 #### Now let's establish that remote connection!  
 * Type: `ssh [name of account]@***ieng6***.[domain].edu` (For me, it would be cse15lwi23aue@ieng6.ucsd.edu).  
 (What u just typed creates a ssh connection from the name of account to the ieng6 server on the specified domain).  
-* Type `yes` to affirm connection and log in with your password.  
+* Type `yes` to affirm connection if this is your first time logging in.  
+* Log in with your password.  
 (The password will not show, even if you think you're not typing, trust me, you are. Just invisibly type it and press enter).
+
+![image](https://user-images.githubusercontent.com/122419405/212502558-59c8ca23-f9ad-4ab0-b7fc-a76bcaa62022.png)
+
 
 #### You are now logged into your class' computer!  
 Let's test that out!
@@ -53,6 +63,8 @@ Here's a list of some commands you can try with your computer (using VS Code ori
 * pwd
 * cp
 * mkdir
+
+![image](https://user-images.githubusercontent.com/122419405/212502715-5cda5e17-3c9a-4419-8624-9591210adc42.png)
 
 > To terminate connection simply type `Ctrl + D` or `exit`
 
