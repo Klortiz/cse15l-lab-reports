@@ -19,7 +19,7 @@ If `word` is not null, then `+=` whatever your second, third, (...), n input is.
 Lastly, I use `+ System.lineSeparator()` after the input you want to add to perform a `String.format("%s \n")` function. 
 
 > I know strings are immutable, so what's happening is that the String variable `word` changes its pointer to a new String that contains the sum of what was currently stored with whatever your input is.  
-> Therefore, we're seeing a new String every time you add a message. 
+> Therefore, we're seeing a new String every time you add a message.  
 > The `System.lineSeparator()` helps with line breaks to make your input look like it's a new and individual one (but in reality is just a big string with all those inputs).
 
 ![image](https://user-images.githubusercontent.com/122419405/215237960-dc46be95-542e-417c-89df-e3d817b46e01.png)  
@@ -34,7 +34,7 @@ This is because `System.lineSeparator()` is the same as `"\n"`, and when you add
 
 ## Part 2
 
-### I will use append bug from the LinkedListExamples.java
+### I will use the `append` bug from `LinkedListExamples.java`
 ![image](https://user-images.githubusercontent.com/122419405/215297559-fa3b2a23-e146-49bb-87b2-02158ad91d51.png)
 
 ```
@@ -44,7 +44,9 @@ This is because `System.lineSeparator()` is the same as `"\n"`, and when you add
   }
 ```
 
-If you look carefully at the while loop, it will never end because it will keep creating new objects that return its condition true all the time.   Thus, a failure-inducing input would be using append once, twice... until we get the one that triggers the infinite loop.  
+If you look carefully at the while loop, it will never end because it will keep creating new objects that return a true condition all the time.   
+
+Thus, a failure-inducing input would be using append once, twice... until we get the one that triggers the infinite loop.  
 > (Note that we're lucky here because it breaks after appending three times, but if there were to be a million appends to do, then a for loop should do this).
 
 ``` @Test 
@@ -71,6 +73,7 @@ Adding **two times** doesn't induce a failure either because there's code built 
 ```
 
 So, after running these tests we find the symptom:
+
 ![image](https://user-images.githubusercontent.com/122419405/215297901-77a1832e-83a2-4020-bc57-2f441c9c97dd.png)
 
 The bug is located at the end of the while loop, that `n.next = new Node(value, null);`
