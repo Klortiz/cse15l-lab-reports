@@ -49,14 +49,15 @@ If you look carefully at the while loop, it will never end because it will keep 
 Thus, a failure-inducing input would be using append once, twice... until we get the one that triggers the infinite loop.  
 > (Note that we're lucky here because it breaks after appending three times, but if there were to be a million appends to do, then a for loop should do this).
 
-``` @Test (Never ended)
-    public void testAppend() {  
-        LinkedList app = new LinkedList();  
-        app.append(13);  
-        app.append(133); // maximum  
-        app.append(46); // append three times = infinite loop  
-        app.append(37);  
-        app.append(777);  
+``` 
+@Test (Never ended)
+    public void testAppend() {
+        LinkedList app = new LinkedList();
+        app.append(13);
+        app.append(133); // maximum
+        app.append(46); // append three times = infinite loop
+        app.append(37);
+        app.append(777);
     }
 ```
 
@@ -76,10 +77,11 @@ So, after running these tests we find the symptom:
 
 ![image](https://user-images.githubusercontent.com/122419405/215297901-77a1832e-83a2-4020-bc57-2f441c9c97dd.png)
 
-The bug is located at the end of the while loop, that `n.next = new Node(value, null);`
-Because it will keep expanding the list, the loop will keep running true because it's programmed to keep looking for the end. But if you keep expanding the end as you go, you'll never reach it. 
+The bug is located at the end of the while loop — meaning, at `n.next = new Node(value, null);`
+Because the while loop will keep expanding the list, the loop will keep running true.  
+This while loop is programmed to keep looking for the end, and if you keep expanding the end as you go, you'll never reach it. It must stop. 
 
-Solution: Moving it to the outside, so you can first find the end, and then expand the list (append) at that index (at `n.next`).
+Solution: Moving the loop's last statement to the outside, so you can first find the end and then expand the list (append) from that end (at `n.next`).
 
 ```
   while(n.next != null) {
@@ -90,10 +92,12 @@ Solution: Moving it to the outside, so you can first find the end, and then expa
 ![image](https://user-images.githubusercontent.com/122419405/215238434-28d487c4-527b-4669-b7bc-59f3fb89fa49.png)
 
 # Part 3
-I learned so much from lab 2 and 3, I'll do a bulleted list!
+I learned so much from lab 2 and 3. I'll do a bulleted list!
 * I learned how to `ssh` to a server.
-* I learned how to `scp`, how to copy files from my computer to the server and vicevesa (this is what hackers do!)
+* I learned how to `scp` — how to copy files from my computer to the server and vicevesa (this is what hackers do!)
 * I learned how to deploy a webserver!
 * I learned what all those letters in the search bar mean.
 * I learned how to change a website through the search bar (as if the search bar was a little terminal!)
 * I learned about URI and how to use some of its methods like `getPath()` and `getQuery()`
+* Last but not least, I learned how to use Github in general, with VS Code, in my desktop, and in the server.  
+> (I've never used github before, I think I got this!)
