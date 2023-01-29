@@ -29,7 +29,7 @@ Lastly, I use `+ System.lineSeparator()`, after the parameter string index, that
 
 ![image](https://user-images.githubusercontent.com/122419405/215238004-9f0d1346-b8a2-4fde-ae18-22956749fd0e.png)
 
-Turns out, they were just turned into strings and added perfectly!
+Turns out, they were just turned into strings and added perfectly!  
 This is because `System.lineSeparator()` is the same as `"\n"`, and when you add [any variable] + [a string] you get a string back.
 
 ## Part 2
