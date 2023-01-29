@@ -15,6 +15,8 @@ If `word` is null, set `word` equal to whatever your first input is.
 > Note: Without this if statement, you would be adding your string to null.  
 > In other words, `/add-message?s=hiii` would return `nullhiii` and not `hiii`
 
+Typing http://localhost:1313/ `add-message?s=hiii` returns:  
+
 ![image](https://user-images.githubusercontent.com/122419405/215237926-6071ba0d-70c2-4607-81fe-aff5b936fd8c.png)  
 
 The second part of the if statement is executed and showed in the next second screenshot.  
@@ -25,12 +27,21 @@ Lastly, I use `+ System.lineSeparator()`, after the parameter string index, that
 > Therefore, we're seeing a new String every time you add a message.  
 > The `System.lineSeparator()` helps with line breaks to make your input look like it's a new and individual one (but in reality is just a big string with all those inputs).
 
+Typing http://localhost:1313/ `add-message?s=how r you??` returns:  
+
 ![image](https://user-images.githubusercontent.com/122419405/215237960-dc46be95-542e-417c-89df-e3d817b46e01.png)  
 
+
 ### Here, I tried to input non-string values such as URIs and ints.
-![image](https://user-images.githubusercontent.com/122419405/215237987-0861b494-0c0b-4a8e-8289-2e9153755ad1.png)
+Typing http://localhost:1313/ `add-message?s=13` returns:  
+
+![image](https://user-images.githubusercontent.com/122419405/215237987-0861b494-0c0b-4a8e-8289-2e9153755ad1.png)  
+
+
+Typing http://localhost:1313/ `add-message?s=[URL]` returns:  
 
 ![image](https://user-images.githubusercontent.com/122419405/215238004-9f0d1346-b8a2-4fde-ae18-22956749fd0e.png)
+
 
 Turns out, they were just turned into strings and added perfectly!  
 > This is because `System.lineSeparator()` is the same as `"\n"`, and when you add [any variable] + [a string] you get a string back.
