@@ -5,7 +5,7 @@
 ![image](https://user-images.githubusercontent.com/122419405/215237900-c6a23e14-16dc-4862-a824-831d6b6589f0.png)
 
 The main methods called are found in the second if statement.  
-`getPath()` and `contains()` check whether you're using the `/add-message` command to add your string to my `word` string.  
+Both `getPath()` and `contains()` check whether you're using the `/add-message` command to add your string to my `word` string.  
 I then use an if statement to execute two possible situations (first screenshot prooves the first situation).  
 If word is null, set it equal to whatever your first input is. 
 
