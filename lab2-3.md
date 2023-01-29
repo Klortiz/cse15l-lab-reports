@@ -15,8 +15,8 @@ If word is null, set it equal to whatever your first input is.
 ![image](https://user-images.githubusercontent.com/122419405/215237926-6071ba0d-70c2-4607-81fe-aff5b936fd8c.png)  
 
 The second part of the if statement is executed and showed in the next second screenshot.  
-If `word` is not null, then just += whatever your second, third...n input is.
-Finally, I use `+ System.lineSeparator()` after the input you want to add to perform the function of what `String.format("%s \n")` does. 
+If `word` is not null, then `+=` whatever your second, third, ..., n input is.
+Finally, I use `+ System.lineSeparator()` after the input you want to add to perform a `String.format("%s \n")` function. 
 
 I know strings are immutable, so what's happening is that the String variable `word` changes its pointer to a new String that contains the sum of what was currently stored and whatever your input is. We're seeing a new String every time you add a message, and the `System.lineSeparator()` helps with line breaks to make your input look like it's a new and individual one (but in reality is just a big string with all those inputs).
 
