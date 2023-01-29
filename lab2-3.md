@@ -16,7 +16,7 @@ If word is null, set it equal to whatever your first input is.
 
 The second part of the if statement is executed and showed in the next second screenshot.  
 If `word` is not null, then `+=` whatever your second, third, (...), n input is.  
-Lastly, I use `+ System.lineSeparator()` after the input you want to add to perform a `String.format("%s \n")` function. 
+Lastly, I use `+ System.lineSeparator()`, after the parameter string index, that's holding the input you want to add, to perform a `String.format("%s \n")` function. 
 
 > I know strings are immutable, so what's happening is that the String variable `word` changes its pointer to a new String that contains the sum of what was currently stored with whatever your input is.  
 > Therefore, we're seeing a new String every time you add a message.  
@@ -97,4 +97,3 @@ I learned so much from lab 2 and 3, I'll do a bulleted list!
 * I learned what all those letters in the search bar mean.
 * I learned how to change a website through the search bar (as if the search bar was a little terminal!)
 * I learned about URI and how to use some of its methods like `getPath()` and `getQuery()`
-* 
