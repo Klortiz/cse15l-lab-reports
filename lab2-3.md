@@ -18,7 +18,9 @@ The second part of the if statement is executed and showed in the next second sc
 If `word` is not null, then `+=` whatever your second, third, (...), n input is.  
 Lastly, I use `+ System.lineSeparator()` after the input you want to add to perform a `String.format("%s \n")` function. 
 
-I know strings are immutable, so what's happening is that the String variable `word` changes its pointer to a new String that contains the sum of what was currently stored and whatever your input is. We're seeing a new String every time you add a message, and the `System.lineSeparator()` helps with line breaks to make your input look like it's a new and individual one (but in reality is just a big string with all those inputs).
+> I know strings are immutable, so what's happening is that the String variable `word` changes its pointer to a new String that contains the sum of what was currently stored with whatever your input is.  
+> Therefore, we're seeing a new String every time you add a message. 
+> The `System.lineSeparator()` helps with line breaks to make your input look like it's a new and individual one (but in reality is just a big string with all those inputs).
 
 ![image](https://user-images.githubusercontent.com/122419405/215237960-dc46be95-542e-417c-89df-e3d817b46e01.png)  
 
