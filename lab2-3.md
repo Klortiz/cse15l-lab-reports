@@ -1,7 +1,7 @@
 # Lab Report 2 - Servers and Bugs
 
 ## Part 1
-### This is the code of my `StringServer` 
+### This is my `StringServer` 
 ![image](https://user-images.githubusercontent.com/122419405/215237900-c6a23e14-16dc-4862-a824-831d6b6589f0.png)
 
 The main methods called are found in the second if statement.  
@@ -9,8 +9,8 @@ Both `getPath()` and `contains()` check whether you're using the `/add-message` 
 I then use an if statement to execute two possible situations (first screenshot prooves the first situation).  
 If word is null, set it equal to whatever your first input is. 
 
-Note: Without this if statement, you would be adding your string to null.  
-In other words, `/add-message?s=hiii` would return `nullhiii` and not `hiii`
+> Note: Without this if statement, you would be adding your string to null.  
+> In other words, `/add-message?s=hiii` would return `nullhiii` and not `hiii`
 
 ![image](https://user-images.githubusercontent.com/122419405/215237926-6071ba0d-70c2-4607-81fe-aff5b936fd8c.png)  
 
@@ -43,7 +43,7 @@ This is because `System.lineSeparator()` is the same as `"\n"`, and when you add
 ```
 
 If you look carefully at the while loop, it will never end because it will keep creating new objects that return its condition true all the time.   Thus, a failure-inducing input would be using append once, twice... until we get the one that triggers the infinite loop.  
-(Note that we're lucky here because it breaks after appending three times, but if there were to be a million appends to do, then a for loop should do this).
+> (Note that we're lucky here because it breaks after appending three times, but if there were to be a million appends to do, then a for loop should do this).
 
 ``` @Test 
     public void testAppend() {  
