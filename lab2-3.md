@@ -1,10 +1,13 @@
-# Lab Report 2 - Servers and Bugs
+# Lab Report 2 - Servers and Bugs By Kristhian Ortiz
+
+![image](https://user-images.githubusercontent.com/122419405/215300493-75df1c8a-e04e-47a7-9cb8-cdb94e6468d7.png)
+
 
 ## Part 1
 ### This is my `StringServer` 
 ![image](https://user-images.githubusercontent.com/122419405/215237900-c6a23e14-16dc-4862-a824-831d6b6589f0.png)
 
-The main methods called are found in the second if statement.  
+Besides getting a port number to start up the server, the main methods called in my code are found in the second if statement.  
 Both `getPath()` and `contains()` check whether you're using the `/add-message` command to add your string to my `word` string.  
 I then use an if statement to execute two possible situations (first screenshot proves the first situation).  
 If word is null, set it equal to whatever your first input is. 
