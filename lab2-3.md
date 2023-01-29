@@ -10,7 +10,7 @@
 Besides getting a port number to start up the server, the main methods called in my code are found in the second if statement.  
 Both `getPath()` and `contains()` check whether you're using the `/add-message` command to add your string to my `word` string.  
 I then use an if statement to execute two possible situations (first screenshot proves the first situation).  
-If word is null, set it equal to whatever your first input is. 
+If `word` is null, set `word` equal to whatever your first input is. 
 
 > Note: Without this if statement, you would be adding your string to null.  
 > In other words, `/add-message?s=hiii` would return `nullhiii` and not `hiii`
