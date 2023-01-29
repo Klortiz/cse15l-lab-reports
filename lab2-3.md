@@ -60,7 +60,7 @@ Thus, a failure-inducing input would be using append once, twice... until we get
     }
 ```
 
-According to the code, appending **once** doesn't induce a failure because if LinkedList is null, then it just makes your input its first value.  
+According to the code, appending **once** doesn't induce a failure because if LinkedList is null, then it just makes your input be its first value.  
 Adding **two times** doesn't induce a failure either because there's code built for that specific case of having one element already when append gets called. 
 
 ```
