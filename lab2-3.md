@@ -6,7 +6,7 @@
 
 The main methods called are found in the second if statement.  
 Both `getPath()` and `contains()` check whether you're using the `/add-message` command to add your string to my `word` string.  
-I then use an if statement to execute two possible situations (first screenshot prooves the first situation).  
+I then use an if statement to execute two possible situations (first screenshot proves the first situation).  
 If word is null, set it equal to whatever your first input is. 
 
 > Note: Without this if statement, you would be adding your string to null.  
@@ -14,7 +14,7 @@ If word is null, set it equal to whatever your first input is.
 
 ![image](https://user-images.githubusercontent.com/122419405/215237926-6071ba0d-70c2-4607-81fe-aff5b936fd8c.png)  
 
-The second part of the if statement is executed and showed in this second screenshot.  
+The second part of the if statement is executed and showed in the next second screenshot.  
 If `word` is not null, then just += whatever your second, third...n input is.
 Finally, I use `+ System.lineSeparator()` after the input you want to add to perform the function of what `String.format("%s \n")` does. 
 
