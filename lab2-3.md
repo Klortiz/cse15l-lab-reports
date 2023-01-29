@@ -49,7 +49,7 @@ If you look carefully at the while loop, it will never end because it will keep 
 Thus, a failure-inducing input would be using append once, twice... until we get the one that triggers the infinite loop.  
 > (Note that we're lucky here because it breaks after appending three times, but if there were to be a million appends to do, then a for loop should do this).
 
-``` @Test 
+``` @Test (Never ended)
     public void testAppend() {  
         LinkedList app = new LinkedList();  
         app.append(13);  
@@ -64,7 +64,7 @@ According to the code, appending **once** doesn't induce a failure because if Li
 Adding **two times** doesn't induce a failure either because there's code built for that specific case of having one element already when append gets called. 
 
 ```
- @Test 
+ @Test (Passed)
     public void testAppendShouldPass() {
         LinkedList app = new LinkedList();
         app.append(13);
