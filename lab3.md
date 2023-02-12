@@ -26,15 +26,21 @@ you specify the path up to that directory before calling `-empty` like this:
 `2) find -delete`  
 Let's say you found those empty files and want to delete them. Well, that's exactly what `-delete` can do for you!  
 **Warning:** According to [*Linode*](https://www.linode.com/docs/guides/find-files-in-linux-using-the-command-line/#how-to-find-and-delete-a-file-in-linux), you need to be VERY careful with this, as you can delete ANYTHING that matches what you specified.  
+
 So, *Linode's* solution was to combine `-delete` with the already known `-name` command-line option to make sure we're deleting the correct files.  
 Making the code look like this:  
 `$ find -name "file" -delete`  
-![image](https://user-images.githubusercontent.com/122419405/218337136-94a66ee8-9a48-4425-ac14-dda301d671ae.png)  
-
 
 Let's say we want to delete my `no-uwu.txt` file, the syntax will be this:
-`$ find -name "no-uwu.txt" -delete`
+`$ find -name "no-uwu.txt" -delete`  
+![image](https://user-images.githubusercontent.com/122419405/218337136-94a66ee8-9a48-4425-ac14-dda301d671ae.png)  
 
+But this still would delete all files that fall into the name you searched for,  
+if you want to delete a specific file that has a unique difference (i.e. delete uwu from a directory that has Uwu1, uWu-34, uwu, and uwU_awa),  
+you can use `-iname` instead of `-name`. According to [*StackExchange*](https://unix.stackexchange.com/questions/230952/what-is-the-difference-when-using-find-between-name-and-iname#:~:text=but%20the%20match-,is%20case%20insensitive,-.%20%20For%20example%2C%20the) and [*cyberciti.biz*](https://www.cyberciti.biz/faq/linux-unix-how-to-find-and-remove-files/#:~:text=ADVERTISEMENT-,Find%20And%20Remove%20Files%20With%20One%20Command%20On%20Fly,-The%20basic%20find), the syntax is this:
+
+`$ find -iname "specificCaseSensitiveName" -delete`  
+![image](https://user-images.githubusercontent.com/122419405/218339434-d1b1555d-bf41-4095-a231-e5615742f67c.png)
 
 
 `3) find -mtime` (***m***odified ***time***stamp)  
