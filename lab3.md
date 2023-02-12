@@ -47,13 +47,13 @@ you can use `-iname` instead of `-name`. According to [*StackExchange*](https://
 
 
 `3) find -mtime` (***m***odified ***time***stamp)  
-This is that *ChatGPT* search the professor is so excited about.  
+This is that [*ChatGPT*](https://openai.com/blog/chatgpt/) search the professor is so excited about.  
 For his sake, I'm going to include a screenshoot of ChatGPT's relevant output:  
 > (Basically, I'll let *ChatGPT* take over the explanation of `-ntime`)
 
 ![image](https://user-images.githubusercontent.com/122419405/218333822-d9003497-2576-402b-9b1c-783f5e8c4861.png)
 
-> (I want a full grade so I'm taking over again wuajaja)  
+> (I want a full credit, so I'm taking over again wuajaja)  
 
 In other words, `-ntime` outputs the time that the speficied file was ***modified***.  
 I emphasize that because it's easy to confuse with time of creation.  
