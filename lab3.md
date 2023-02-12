@@ -60,8 +60,10 @@ In other words, `-mtime` outputs the time that the speficied file was last ***mo
 
 Here's how it works!  
 `$ find -mtime daysUpToToday-1`  
+
 I say that the argument after `-mtime` is `((days up to today) - 1)` because `-mtime` counts one day after 24 full hours of the time it's been modified (or created if you never modified it).  
-For instance, I just imported `/skill-demo1-data` to my personal computer to make this lab report.  
+
+For instance, I ***just*** imported the `/skill-demo1-data` directory to my personal computer to make this lab report.  
 Hence, passing an argument of `0` will give me all the files within that directory.  
 
 ![image](https://user-images.githubusercontent.com/122419405/218340459-04bb59fd-1b4f-4342-9ca5-da0f5231319d.png)  
