@@ -20,7 +20,13 @@ To
 Let's say you found those empty files and want to delete them. Well, that's exactly what `-delete` can do for you!
 **Warning:** According to [*Linode*](https://www.linode.com/docs/guides/find-files-in-linux-using-the-command-line/#how-to-find-and-delete-a-file-in-linux), you need to be VERY careful with this, as you can delete ANYTHING that matches what you specified.
 
-3)  -mtime (***m***odified ***time***stamp)
+3)  -mtime (***m***odified ***time***stamp)  
+This is that *ChatGPT* search the professor is so excited about.  
+For his sake, I'm going to include a screenshoot of the important output (basically, I'll let *ChatGPT* take over the explanation of `-ntime`).
+
+![image](https://user-images.githubusercontent.com/122419405/218333822-d9003497-2576-402b-9b1c-783f5e8c4861.png)
+
+(I'm taking over again wuajaja) In other words, `-ntime` outputs the time the speficied file was ***modified***. I emphasize that because it's easy to confuse with time of creation. Here's how it works!
 
 
 
