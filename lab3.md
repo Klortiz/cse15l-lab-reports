@@ -1,4 +1,4 @@
-# Lab Report 3
+# Lab Report 3 - Kristhian Ortiz
 ## Researching Commands
 ![FalloutTerminal](https://user-images.githubusercontent.com/122419405/218341468-dcf22f6b-add6-412a-833d-904f7507c6bc.png)
 
