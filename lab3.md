@@ -55,9 +55,11 @@ For his sake, I'm going to include a screenshoot of ChatGPT's relevant output:
 
 > (I want a full credit, so I'm taking over again wuajaja)  
 
-In other words, `-ntime` outputs the time that the speficied file was ***modified***.  
-I emphasize that because it's easy to confuse with time of creation.  
-Here's how it works!
+In other words, `-ntime` outputs the time that the speficied file was last ***modified***.  
+> Note: I emphasize that because it's easy to confuse this with *time of creation.*  
+
+Here's how it works!  
+`$ find 
 
 
 
