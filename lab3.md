@@ -55,10 +55,10 @@ For his sake, I'm going to include a screenshoot of ChatGPT's relevant output:
 
 > (I want a full credit, so I'm taking over again wuajaja)  
 
-In other words, `-mtime` outputs the time that the speficied file was last ***modified***.  
-> Note: I emphasize that because it's easy to confuse this with *time of creation.*  
+In other words, `-mtime` finds the files that were ***last modified*** in the specified time (in days).
+> Note: I emphasize that because it's easy to confuse this with *time of creation.* 
 
-Here's how it works!  
+According to [linuxhint](https://linuxhint.com/find-mtime-linux/#:~:text=explains%20how%20to-,find%20files%20by%20mtime,-(Modification%20time)%20using), here's how it works!  
 `$ find -mtime daysUpToToday-1`  
 
 I say that the argument after `-mtime` is `((days up to today) - 1)` because `-mtime` counts one day after 24 full hours of the time it's been modified (or created if you never modified it).  
@@ -74,11 +74,15 @@ A more detailed example would be this:
 > See where it says *date modified*? That's where you're going to count the 24 full hours.  
 
 Right now is 2:16pm in 2/12/23. So it's technically been 16 days since 1/27/23.  
-But since I last modified my StringServer.java file at 5:46pm, the argument I need to pass on is ((16) -1) which is 15.  
+But since I last modified my `StringServer.java` file at 5:46pm, the argument I need to pass on is ((16) -1) which is 15.  
 
 ![image](https://user-images.githubusercontent.com/122419405/218340646-ff009df8-9aea-4cff-99f0-b8a44e17c8ab.png)
 
 And there u go;)
+
+Now, if you don't know the time it was last modified, and you **only** want to know that time from a specific file, you do this:
+
+
 
 
 
