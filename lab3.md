@@ -48,7 +48,7 @@ you can use `-iname` instead of `-name`. According to [*StackExchange*](https://
 
 `3) find -mtime` (***m***odified ***time***stamp)  
 This is that *ChatGPT* search the professor is so excited about.  
-For his sake, I'm going to include a screenshoot of the important output:  
+For his sake, I'm going to include a screenshoot of ChatGPT's relevant output:  
 > (Basically, I'll let *ChatGPT* take over the explanation of `-ntime`)
 
 ![image](https://user-images.githubusercontent.com/122419405/218333822-d9003497-2576-402b-9b1c-783f5e8c4861.png)
