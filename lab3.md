@@ -40,8 +40,10 @@ The tricky part is that this matches the whole path, not just the word, and that
 What I just said was the hardest to figure out, I had to resort to [*StackOverflow*](https://stackoverflow.com/questions/6844785/how-to-use-regex-with-find-command#:~:text=The%20%2Dregex%20find%20expression%20matches%20the%20whole%20name%2C%20including%20the%20relative%20path%20from%20the%20current%20directory.) to see the how this command-line option actually works.  
 The problem with *StackOverflow* is that it gave an example of an image, not a file.
 
-So, according to me (after playing around with `-regex`), I found that the input should be the *last syllable* of the last word in the file you want to find/match.  
-Also, If the file you want to find ends in a file-type (i.e. *.pdf*, *.txt*) then you don't have to include a dot at the end of the input (before the single quote).  
+So, according to me (after playing around with `-regex`),  
+I found that the input should be the *last syllable* of the last word in the file you want to find/match.  
+Also, If the file you want to find ends in a file-type (i.e. *.pdf*, *.txt*) then you don't have to include a dot at the end of the input  
+(before the single quote).  
 You'll see what I'm talking about with some examples:
 
 To search for a file with no specific type-file at the end of its name, you have to follow this syntax:  
