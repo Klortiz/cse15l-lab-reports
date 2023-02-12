@@ -42,11 +42,28 @@ Also, If the file you want to find ends in a file-type (i.e. *.pdf*, *.txt*) the
 You'll see what I'm talking about with some examples:
 
 To search for a file with no specific type-file at the end of its name, you have to follow this syntax:  
-`$ find -regex '.*syllable.'` (Note that there's a dot at the end of the syllable)
+`$ find -regex '.*syllable.'` (Note that there's a dot at the end of the syllable)  
 
+There's a file inside `/written_2` that I know ends with `berlitz1` and `berlitz2`, let's match them!
+![image](https://user-images.githubusercontent.com/122419405/218335359-84194a6d-0c22-4e2c-ab9d-10fb307ab769.png)
+
+> Notice how it doesn't work without a period
+
+Let's say you want the specific file, but instead of a syllable, it has a number at the end.  
+For the input, you need to include the **FIRST** letter of the last syllable AND then the number to get the specific file you want.
+We know that there's a `berlitz1` somewhere, so we match it like this:  
+
+![image](https://user-images.githubusercontent.com/122419405/218335675-7ae3a863-0a5f-4539-8ce4-26d376c601b1.png)
+> There's NO period before single quote.
+> You know what else doesn't want periods at the end of their input? 
+> Type-files! (That's next bonus example).
 
 To search for a file with a file-type at the end of its name, you do this:
-`$ find -regex '.*fileType'` (Note that there's no period at the end of the file-type)
+`$ find -regex '.*fileType'` (Note that there's no period at the end of the file-type)  
+![image](https://user-images.githubusercontent.com/122419405/218335773-dfee7a1b-e1c6-4b7b-872d-b7ae7bce58a5.png)
+
+
+
 
 
 
