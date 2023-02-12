@@ -63,7 +63,7 @@ Here's how it works!
 
 I say that the argument after `-mtime` is `((days up to today) - 1)` because `-mtime` counts one day after 24 full hours of the time it's been modified (or created if you never modified it).  
 
-For instance, I ***just*** imported the `/skill-demo1-data` directory to my personal computer to make this lab report.  
+For instance, I **just** imported the `/skill-demo1-data` directory to my personal computer to make this lab report.  
 Hence, passing an argument of `0` will give me all the files within that directory.  
 
 ![image](https://user-images.githubusercontent.com/122419405/218340459-04bb59fd-1b4f-4342-9ca5-da0f5231319d.png)  
@@ -71,9 +71,11 @@ Hence, passing an argument of `0` will give me all the files within that directo
 A more detailed example would be this:  
 ![image](https://user-images.githubusercontent.com/122419405/218340535-477081f0-c2db-41ab-a887-bd8b7d058b72.png)
 
-See where it says "date modified"? That's where you're going to count the 24 full hours.  
+> See where it says *date modified*? That's where you're going to count the 24 full hours.  
+
 Right now is 2:16pm in 2/12/23. So it's technically been 16 days since 1/27/23.  
 But since I last modified my StringServer.java file at 5:46pm, the argument I need to pass on is ((16) -1) which is 15.  
+
 ![image](https://user-images.githubusercontent.com/122419405/218340646-ff009df8-9aea-4cff-99f0-b8a44e17c8ab.png)
 
 And there u go;)
