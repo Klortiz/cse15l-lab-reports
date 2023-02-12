@@ -55,10 +55,10 @@ For his sake, I'm going to include a screenshoot of ChatGPT's relevant output:
 
 > (I want a full credit, so I'm taking over again wuajaja)  
 
-In other words, `-mtime` finds the files that were ***last modified*** in the specified time (in days).
+In other words, according to [linuxhint](https://linuxhint.com/find-mtime-linux/#:~:text=explains%20how%20to-,find%20files%20by%20mtime,-(Modification%20time)%20using), `-mtime` finds the files that were ***last modified*** in the specified time (in days).
 > Note: I emphasize that because it's easy to confuse this with *time of creation.* 
 
-According to [linuxhint](https://linuxhint.com/find-mtime-linux/#:~:text=explains%20how%20to-,find%20files%20by%20mtime,-(Modification%20time)%20using), here's how it works!  
+Here's how it works!  
 `$ find -mtime daysUpToToday-1`  
 
 I say that the argument after `-mtime` is `((days up to today) - 1)` because `-mtime` counts one day after 24 full hours of the time it's been modified (or created if you never modified it).  
@@ -69,6 +69,7 @@ Hence, passing an argument of `0` will give me all the files within that directo
 ![image](https://user-images.githubusercontent.com/122419405/218340459-04bb59fd-1b4f-4342-9ca5-da0f5231319d.png)  
 
 A more detailed example would be this:  
+
 ![image](https://user-images.githubusercontent.com/122419405/218340535-477081f0-c2db-41ab-a887-bd8b7d058b72.png)
 
 > See where it says *date modified*? That's where you're going to count the 24 full hours.  
@@ -80,15 +81,7 @@ But since I last modified my `StringServer.java` file at 5:46pm, the argument I 
 
 And there u go;)
 
-Now, if you don't know the time it was last modified, and you **only** want to know that time from a specific file, you do this:
-
-
-
-
-
-
-
-
+> Note: if you don't know the time it was last modified, and you **only** want to know that time from a specific file, you can use the `stat` command but that's out of the scope of this lab report.
 
 
 `4) find -regex` (***reg***ular ***ex***pression)  
