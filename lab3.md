@@ -1,12 +1,13 @@
 # Lab Report 3
 ## Researching Commands
+![FalloutTerminal](https://user-images.githubusercontent.com/122419405/218341468-dcf22f6b-add6-412a-833d-904f7507c6bc.png)
 
 ![image](https://user-images.githubusercontent.com/122419405/218331294-82fceef0-2f40-430c-ba43-40fdf6ce97ab.png)
 
 Besides the well-known `-name` command-line option, the `find` command-line has A LOT more options to offer.  
 Here are four of them:
 
-
+![image](https://user-images.githubusercontent.com/122419405/218341614-4b0cfb6f-802f-48db-ac38-8c0dde802ea5.png)  
 `1) find -empty`  
 According to [*GeeksForGeeks*](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/#:~:text=4.-,Search%20for%20empty%20files%20and%20directories.,-%24%20find%20./GFG%20%2Dempty), the `-empty` command-line option searches for all empty files AND directories.  
 This is extremely useful to maintain your directories well organized and less overwhelming to the users.  
@@ -25,6 +26,7 @@ you specify the path up to that directory before calling `-empty` like this:
 > no-uwu.txt is an empty file I added for test purposes only. It's empty because there's no uwu on it.
 
 
+![image](https://user-images.githubusercontent.com/122419405/218341694-78c2f7c6-a857-409a-b81e-c1cee303be38.png)  
 `2) find -delete`  
 Let's say you found those empty files and want to delete them. Well, that's exactly what `-delete` can do for you!  
 **Warning:** According to [*Linode*](https://www.linode.com/docs/guides/find-files-in-linux-using-the-command-line/#how-to-find-and-delete-a-file-in-linux), you need to be VERY careful with this, as you can delete ANYTHING that matches what you specified.  
@@ -46,6 +48,7 @@ you can use `-iname` instead of `-name`. According to [*StackExchange*](https://
 ![image](https://user-images.githubusercontent.com/122419405/218339434-d1b1555d-bf41-4095-a231-e5615742f67c.png)
 
 
+![image](https://user-images.githubusercontent.com/122419405/218341787-1c55a142-0bbd-4c3b-92e7-291e7ac21bfd.png)  
 `3) find -mtime` (***m***odified ***time***stamp)  
 This is that [*ChatGPT*](https://openai.com/blog/chatgpt/) search the professor is so excited about.  
 For his sake, I'm going to include a screenshoot of ChatGPT's relevant output:  
@@ -84,6 +87,7 @@ And there u go;)
 > Note: if you don't know the time it was last modified, and you **only** want to know that time from a specific file, you can use the `stat` command but that's out of the scope of this lab report.
 
 
+![image](https://user-images.githubusercontent.com/122419405/218341856-e4f715a2-98de-453f-b012-2b80fbe8f7be.png)  
 `4) find -regex` (***reg***ular ***ex***pression)  
 [*ss64.com*](https://ss64.com/bash/find.html#:~:text=to%20using%20%27/%27%20instead.-,%2Dregex%20pattern,-File%20name%20matches)'s explanation is a little off, so I'll try to say what I got from that.  
 Basically, `-regex` matches the word (input) with all the files, directories, and sub-directories in the current working directory.  
