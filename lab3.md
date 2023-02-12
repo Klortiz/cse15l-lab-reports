@@ -124,3 +124,6 @@ Last but not least, to search for a file with a file-type at the end of its name
 
 ![image](https://user-images.githubusercontent.com/122419405/218335773-dfee7a1b-e1c6-4b7b-872d-b7ae7bce58a5.png)
 
+Thanks for reading!  
+Have a wonderful day;)  
+![image](https://user-images.githubusercontent.com/122419405/218342345-31fe129f-303f-4535-9dc5-e101bd2a2e9c.png)
