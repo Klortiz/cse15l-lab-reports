@@ -34,11 +34,14 @@ Here's how it works!
 
 `4) find -regex` (***reg***ular ***ex***pression)  
 [*ss64.com*](https://ss64.com/bash/find.html#:~:text=to%20using%20%27/%27%20instead.-,%2Dregex%20pattern,-File%20name%20matches)'s explanation is a little off, so I'll try to say what I got from that.  
-Basically, `-regex` matches the word (input) with all the files, directories, and sub-directories in the current working directory. The tricky part is that this matches the whole path, not just the word, and that it's not a word what you're actually inputting, it's a specific *patten*.  
-What I just said was the hardest to figure out, I had to resort to [*StackOverflow*](https://stackoverflow.com/questions/6844785/how-to-use-regex-with-find-command#:~:text=The%20%2Dregex%20find%20expression%20matches%20the%20whole%20name%2C%20including%20the%20relative%20path%20from%20the%20current%20directory.) to see the how this command-line option actually works. The problem with *StackOverflow* is that it gave an example of an image, not a file.
+Basically, `-regex` matches the word (input) with all the files, directories, and sub-directories in the current working directory.  
+The tricky part is that this matches the whole path, not just the word, and that it's not a word what you're actually inputting, it's a specific *patten*.  
 
-So, according to me (after playing around with `-regex`), I found that the input should be the *last syllable* of the last word in the file you want to find/match.
-Also, If the file you want to find ends in a file-type (i.e. *.pdf*, *.txt*) then you don't have to include a dot at the end of the input (before the single quote).
+What I just said was the hardest to figure out, I had to resort to [*StackOverflow*](https://stackoverflow.com/questions/6844785/how-to-use-regex-with-find-command#:~:text=The%20%2Dregex%20find%20expression%20matches%20the%20whole%20name%2C%20including%20the%20relative%20path%20from%20the%20current%20directory.) to see the how this command-line option actually works.  
+The problem with *StackOverflow* is that it gave an example of an image, not a file.
+
+So, according to me (after playing around with `-regex`), I found that the input should be the *last syllable* of the last word in the file you want to find/match.  
+Also, If the file you want to find ends in a file-type (i.e. *.pdf*, *.txt*) then you don't have to include a dot at the end of the input (before the single quote).  
 You'll see what I'm talking about with some examples:
 
 To search for a file with no specific type-file at the end of its name, you have to follow this syntax:  
@@ -50,7 +53,7 @@ There's a file inside `/written_2` that I know ends with `berlitz1` and `berlitz
 > Notice how it doesn't work without a period
 
 Let's say you want the specific file, but instead of a syllable, it has a number at the end.  
-For the input, you need to include the **FIRST** letter of the last syllable AND then the number to get the specific file you want.
+For the input, you need to include the **FIRST** letter of the last syllable **AND then** the number to get the specific file you want.
 We know that there's a `berlitz1` somewhere, so we match it like this:  
 
 ![image](https://user-images.githubusercontent.com/122419405/218335675-7ae3a863-0a5f-4539-8ce4-26d376c601b1.png)
