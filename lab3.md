@@ -9,6 +9,7 @@ Here are four of them:
 `1) find -empty`  
 According to [*GeeksForGeeks*](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/#:~:text=4.-,Search%20for%20empty%20files%20and%20directories.,-%24%20find%20./GFG%20%2Dempty), the `-empty` command-line option searches for all empty files AND directories.  
 This is extremely useful to maintain your directories organized and less overwhelming to the users.  
+
 Here's how it works (Syntax):  
 To find an empty file among all the files of all directories and sub-directories, you simply:  
 `$ find -empty `  
