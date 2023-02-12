@@ -29,8 +29,8 @@ you specify the path up to that directory before calling `-empty` like this:
 Let's say you found those empty files and want to delete them. Well, that's exactly what `-delete` can do for you!  
 **Warning:** According to [*Linode*](https://www.linode.com/docs/guides/find-files-in-linux-using-the-command-line/#how-to-find-and-delete-a-file-in-linux), you need to be VERY careful with this, as you can delete ANYTHING that matches what you specified.  
 
-We need to combine `-delete` with the already known `-name` command-line option to make sure we're deleting the correct files.  
-Making the code look like this:  
+To use it, we need to combine `-delete` with the already known `-name` command-line option to make sure we're deleting the correct files.  
+Hence, the code looks like this:  
 `$ find -name "file" -delete`  
 
 Let's say we want to delete my `no-uwu.txt` file, the syntax will be this:
