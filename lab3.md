@@ -33,7 +33,9 @@ Here's how it works!
 
 
 `4) find -regex` (***reg***ular ***ex***pression)  
-
+This was the hardest to figure out, I had to resort to *StackOverflow* to see the true actual functionality of this command-line option.
+According to me, after playing around with `-regex`, I found that the input should be the last syllable of the last word in the file you want to find.
+Also, If the file you want to find ends in a file-type (i.e. *.pdf*, *.txt*) then you don't have to include a dot at the end of the input (before the single quote).
 
 
 
