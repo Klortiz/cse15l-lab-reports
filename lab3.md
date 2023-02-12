@@ -119,12 +119,8 @@ We know that there's a `berlitz1` somewhere, so we match it like this:
 > You know what else doesn't want periods at the end of their input? 
 > Type-files! (That's next bonus example).
 
-To search for a file with a file-type at the end of its name, you do this:
-`$ find -regex '.*fileType'` (Note that there's no period at the end of the file-type)  
+Last but not least, to search for a file with a file-type at the end of its name, you do this:  
+`$ find -regex '.*fileType'` (Note that there's no period at the end of the file-type).  
+
 ![image](https://user-images.githubusercontent.com/122419405/218335773-dfee7a1b-e1c6-4b7b-872d-b7ae7bce58a5.png)
-
-
-
-
-
 
