@@ -12,10 +12,13 @@ This is extremely useful to maintain your directories organized and less overwhe
 Here's how it works (Syntax)  
 To find an empty file among all the files of all directories and sub-directories, you simply:  
 `$ find -empty `  
+
 ![image](https://user-images.githubusercontent.com/122419405/218336223-157b7996-f285-470b-935a-0a76bfecca71.png)  
 
-To find an empty file within a specific directory, you specify the path up to that directory before calling `-empty` like this:  
+To find an empty file within a specific directory,  
+you specify the path up to that directory before calling `-empty` like this:  
 `$ find ./directory -empty`  
+
 ![image](https://user-images.githubusercontent.com/122419405/218336247-c1c3b7f2-3adf-4a1d-8fa0-0edf40aa3bad.png)  
 > no-uwu.txt is an empty file I added for test purposes only. It's empty because there's no uwu on it.
 
