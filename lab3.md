@@ -6,4 +6,15 @@
 Besides the well-known `-name` command-line option, the `find` command-line has A LOT more options to offer.  
 Here are four of them:
 
+1)  -empty
+
+
+2)  -mtime (***m***odified ***time***stamp)
+
+
+3)  -delete
+
+
+4)  -regex (***reg***ular ***ex***pression)
+
 
