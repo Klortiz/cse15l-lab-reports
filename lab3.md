@@ -33,15 +33,16 @@ To use it, we need to combine `-delete` with the already known `-name` command-l
 Hence, the code looks like this:  
 `$ find -name "file" -delete`  
 
-Let's say we want to delete my `no-uwu.txt` file, the syntax will be this:
+Let's say we want to delete my `no-uwu.txt` file, the syntax will be this:  
 `$ find -name "no-uwu.txt" -delete`  
+
 ![image](https://user-images.githubusercontent.com/122419405/218337136-94a66ee8-9a48-4425-ac14-dda301d671ae.png)  
 
 But this still would delete all files that fall into the name you searched for,  
 if you want to delete a specific file that has a unique difference (i.e. delete uwu from a directory that has Uwu1, uWu-34, uwu, and uwU_awa),  
-you can use `-iname` instead of `-name`. According to [*StackExchange*](https://unix.stackexchange.com/questions/230952/what-is-the-difference-when-using-find-between-name-and-iname#:~:text=but%20the%20match-,is%20case%20insensitive,-.%20%20For%20example%2C%20the) and [*cyberciti.biz*](https://www.cyberciti.biz/faq/linux-unix-how-to-find-and-remove-files/#:~:text=ADVERTISEMENT-,Find%20And%20Remove%20Files%20With%20One%20Command%20On%20Fly,-The%20basic%20find), the syntax is this:
-
+you can use `-iname` instead of `-name`. According to [*StackExchange*](https://unix.stackexchange.com/questions/230952/what-is-the-difference-when-using-find-between-name-and-iname#:~:text=but%20the%20match-,is%20case%20insensitive,-.%20%20For%20example%2C%20the) and [*cyberciti.biz*](https://www.cyberciti.biz/faq/linux-unix-how-to-find-and-remove-files/#:~:text=ADVERTISEMENT-,Find%20And%20Remove%20Files%20With%20One%20Command%20On%20Fly,-The%20basic%20find), the syntax is this:  
 `$ find -iname "specificCaseSensitiveName" -delete`  
+
 ![image](https://user-images.githubusercontent.com/122419405/218339434-d1b1555d-bf41-4095-a231-e5615742f67c.png)
 
 
