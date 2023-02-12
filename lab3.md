@@ -22,11 +22,16 @@ Let's say you found those empty files and want to delete them. Well, that's exac
 
 3)  -mtime (***m***odified ***time***stamp)  
 This is that *ChatGPT* search the professor is so excited about.  
-For his sake, I'm going to include a screenshoot of the important output (basically, I'll let *ChatGPT* take over the explanation of `-ntime`).
+For his sake, I'm going to include a screenshoot of the important output:  
+> Basically, I'll let *ChatGPT* take over the explanation of `-ntime`
 
 ![image](https://user-images.githubusercontent.com/122419405/218333822-d9003497-2576-402b-9b1c-783f5e8c4861.png)
 
-(I'm taking over again wuajaja) In other words, `-ntime` outputs the time the speficied file was ***modified***. I emphasize that because it's easy to confuse with time of creation. Here's how it works!
+> (I want a full grade so I'm taking over again wuajaja)  
+
+In other words, `-ntime` outputs the time that the speficied file was ***modified***.  
+I emphasize that because it's easy to confuse with time of creation.  
+Here's how it works!
 
 
 
