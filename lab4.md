@@ -97,7 +97,10 @@ I pressed `Ctrl + X` to exit.
 Thank you, next!
 
 ## 8) Run the tests, demonstrating that they now succeed.  
+I didn't want to type the above command to compile all java files and run the JUnit files (`javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` and `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTest`) so I just move the `up` arrow key until I found them in my history and pressed `Enter` for both of them.  
 
+![image](https://user-images.githubusercontent.com/122419405/221388691-14819aad-c77f-4783-a8d9-41bb09883362.png)  
+It passes!  
 
 ## 9) Commit and push the resulting change to your Github account (you can pick any commit message!)  
 
