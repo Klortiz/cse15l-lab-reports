@@ -28,16 +28,16 @@ Click the `Create Fork` button.
 ## 4) Log into ieng6.   
 - Open Visual Studio Code's terminal using `Ctrl + back-quote`. 
 - Type `ssh` `cs15lwi23[your unique letters here]@ieng6.ucsd.edu` 
-- Press `Enter`
+- Press `<Enter>`
 - Type your password.
-- Press `Enter`
+- Press `<Enter>`
 > Note that if you want to avoid all of this, you can refer to the class website to [set up ssh keys for ieng6 and github](https://ucsd-cse15l-w23.github.io/week/week7/#:~:text=Command%2DLine%20Setup-,Generating%20SSH%20Keys%20for%20ieng6,-With%20the%20setup).  
 
 ## 5) Clone your fork of the repository from your Github account.   
 Because you will work with the fork you just made, on its main page, click on `code` to copy the `ssh` link to clone.  
 ![image](https://user-images.githubusercontent.com/122419405/221386972-614837d4-8bf3-4158-8467-4123d5ba6689.png)  
 
-On the terminal, already connected to the server, type `git clone` and paste the ssh link. Hit `Enter`.  
+On the terminal, already connected to the server, type `git clone` and paste the ssh link. Hit `<Enter>`.  
 ![image](https://user-images.githubusercontent.com/122419405/221387045-7d9dbdae-60fd-42bd-b0c3-6b8c858fd136.png)  
 > I always type `ls` to know what changed, where I'm at, and to display the names of what I will be working on. It's a good habit.  
 
@@ -89,22 +89,59 @@ To do that, I moved the `left` arrow key until the white pointer was on the righ
 > The white (square) pointer deletes and types on the space before it.  
 
 ![image](https://user-images.githubusercontent.com/122419405/221388264-2e374cb5-1a19-4c56-81bc-68dc3a95bd4f.png)  
-I pressed the `delete` key and typed `2` instead.
+I pressed the `<delete>` key and typed `2` instead.
 I pressed `Ctrl + O` to save the file.
-I pressed `Enter` to save the file with the same name.
+I pressed `<Enter>` to save the file with the same name.
 I pressed `Ctrl + X` to exit.
 
 Thank you, next!
 
 ## 8) Run the tests, demonstrating that they now succeed.  
-I didn't want to type the above command to compile all java files and run the JUnit files (`javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` and `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTest`) so I just move the `up` arrow key until I found them in my history and pressed `Enter` for both of them.  
+I didn't want to type the above command to compile all java files and run the JUnit files (`javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` and `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTest`) so I just move the `up` arrow key until I found them in my history and pressed `<Enter>` for both of them (we need to compile java again because we made a change).  
 
 ![image](https://user-images.githubusercontent.com/122419405/221388691-14819aad-c77f-4783-a8d9-41bb09883362.png)  
 It passes!  
 
 ## 9) Commit and push the resulting change to your Github account (you can pick any commit message!)  
+![image](https://user-images.githubusercontent.com/122419405/221388929-d538c24d-1479-4a3f-b515-ffe7af628286.png)  
+To commit and push the changes into the fork of my Github account;
+I typed `git add ListExamples.java` (I added the file I modified).
+I typed `git status` to make sure the file I modified matches the file I'm adding.  
+
+![image](https://user-images.githubusercontent.com/122419405/221389003-0cc9e756-e758-4bb4-8e1e-f95037bef560.png)  
+
+I then commited the file into the fork by typing `git commit -m "Updated For Lab Report 4 Purposes uwu"`.
+Followed by another `git status` to make sure the modified file is not there anymore (meaning it got commited).  
+![image](https://user-images.githubusercontent.com/122419405/221389119-b786ec97-c55f-417b-84b1-5cccc91aa34e.png)  
+
+Last but not least, I typed `git push` to conclude this report for good.  
+![image](https://user-images.githubusercontent.com/122419405/221389246-0628c06b-9a43-4637-aa95-539fadf09d48.png)  
+
+## Bonus) - Double check your work.
+If we go to your fork page, you should see the changes display almost instantly.  
+To find it, click on the file we edited `ListExamples.java` in github.  
+![image](https://user-images.githubusercontent.com/122419405/221389318-85a5711c-d4f8-4a52-b161-0ac4bb093fb4.png)  
+
+Then click on `History`  
+![image](https://user-images.githubusercontent.com/122419405/221389348-440e9fc1-56cc-4abf-8f43-a3b5127a76c2.png)  
+
+Click on the message you put when you commited the file:  
+![image](https://user-images.githubusercontent.com/122419405/221389372-496346b7-5655-4e0a-a100-fdf43874dbdf.png)  
+
+And you should see everything in the most greatest super detail:  
+![image](https://user-images.githubusercontent.com/122419405/221389399-3cb314a9-691b-481d-b8a2-623ce959eb72.png)  
+
+That's it! It's funny how it actually takes 2 hours to explain 2 minutes of code. 
+I'm done with this file, Git push!
 
 
 
-For special characters like <enter> or <tab>, write them in angle brackets with code formatting. 
-Then, summarize the commands you ran and what the effect of those keypresses were.
+
+
+
+
+
+
+
+
+summarize the commands you ran and what the effect of those keypresses were.
