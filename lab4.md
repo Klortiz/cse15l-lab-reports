@@ -24,8 +24,11 @@ Click the `Create Fork` button.
 ![image](https://user-images.githubusercontent.com/122419405/221386475-7ef3c06c-74a2-408f-a58e-348531349398.png)  
 > It's a big image so you know where this competition actually starts among all the easy-to-get-lost pictures in this lab report.
 
-
 ## 4) Log into ieng6  
+- Open Visual Studio Code's terminal using `Ctrl + back-quote`. 
+- Type `ssh` `cs15lwi23[your unique letters here]@ieng6.ucsd.edu` 
+- Type your password.
+> Note that if you want to avoid all of this, you can refer to the class website to [set up ssh keys for ieng6 and github](https://ucsd-cse15l-w23.github.io/week/week7/#:~:text=Command%2DLine%20Setup-,Generating%20SSH%20Keys%20for%20ieng6,-With%20the%20setup).  
 
 ## 5) Clone your fork of the repository from your Github account  
 
