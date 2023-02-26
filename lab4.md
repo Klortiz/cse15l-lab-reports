@@ -3,8 +3,7 @@
 ![DALL·E 2023-02-22 18 06 31 - a student sitting in a desk with a laptop working on code in a room with the sunset through the window](https://user-images.githubusercontent.com/122419405/221385926-139309c1-c5c0-4fc8-b7ed-007e5560b9a9.png)  
 > This picture was made by the Open AI DALL-E
 
-### There are nine steps on this competition:
-(((For each numbered step take a screenshot, and write down exactly which keys you pressed to get to that step.)))  
+### There are nine steps on this competition:  
 
 ## 1) Setup - Delete any existing forks of the repository from your account.  
 If you have a fork already, go to its settings in github and scroll all the way down to delete it:
@@ -13,7 +12,7 @@ If you have a fork already, go to its settings in github and scroll all the way 
 If you didn't have a fork, or you just deleted the old one, go to the [original repository ](https://github.com/ucsd-cse15l-w23/lab7) to fork it (details below).  
 
 ## 2) Setup - Fork the repository.   
-Once you clicked [that link](https://github.com/ucsd-cse15l-w23/lab7), click the `Fork` button in the upper right hand corner.  
+Once you clicked [that link](https://github.com/ucsd-cse15l-w23/lab7) that goes to the original repository we want to work, click the `Fork` button in the upper right hand corner.  
 
 ![image](https://user-images.githubusercontent.com/122419405/221386285-38ec0078-a659-4b80-96c4-ff574b7ca982.png)  
 
@@ -26,15 +25,19 @@ Click the `Create Fork` button.
 > It's a big image so you know where this competition actually starts among all the easy-to-get-lost pictures in this lab report.
 
 ## 4) Log into ieng6.   
-- Open Visual Studio Code's terminal using `Ctrl + back-quote`. 
-- Type `ssh` `cs15lwi23[your unique letters here]@ieng6.ucsd.edu` 
-- Press `<Enter>`
-- Type your password.
-- Press `<Enter>`
-> Note that if you want to avoid all of this, you can refer to the class website to [set up ssh keys for ieng6 and github](https://ucsd-cse15l-w23.github.io/week/week7/#:~:text=Command%2DLine%20Setup-,Generating%20SSH%20Keys%20for%20ieng6,-With%20the%20setup).  
+- I opened Visual Studio Code's terminal using `Ctrl + back-quote`. 
+- Typed `ssh` `cs15lwi23[your unique letters here]@ieng6.ucsd.edu` 
+- Pressed `<Enter>`  
+> Note that, if I didn't hava an ssh key, I would've had to:
+> - Type password.
+> - Press `<Enter>`  
+
+![image](https://user-images.githubusercontent.com/122419405/221389682-8ade15fb-6975-4b92-97d5-d6e1d110214f.png)  
+
+> If you want to avoid typing your password, you can refer to the class website to [set up ssh keys for ieng6 and github](https://ucsd-cse15l-w23.github.io/week/week7/#:~:text=Command%2DLine%20Setup-,Generating%20SSH%20Keys%20for%20ieng6,-With%20the%20setup).  
 
 ## 5) Clone your fork of the repository from your Github account.   
-Because you will work with the fork you just made, on its main page, click on `code` to copy the `ssh` link to clone.  
+Because you will work with the fork you just made, go to its main page and click on `code` to copy the `ssh` link to clone.  
 ![image](https://user-images.githubusercontent.com/122419405/221386972-614837d4-8bf3-4158-8467-4123d5ba6689.png)  
 
 On the terminal, already connected to the server, type `git clone` and paste the ssh link. Hit `<Enter>`.  
@@ -42,7 +45,7 @@ On the terminal, already connected to the server, type `git clone` and paste the
 > I always type `ls` to know what changed, where I'm at, and to display the names of what I will be working on. It's a good habit.  
 
 ## 6) Run the tests, demonstrating that they fail.   
-cd into lab7 (like this: `cd lab7`) so we can compile its java files and run junit. (Remember to `ls`)  
+I cd-ed into lab7 (like this: `cd lab7`) so we can compile its java files and run junit. (Remember to `ls` afterwards)  
 
 ![image](https://user-images.githubusercontent.com/122419405/221387196-00007ddf-ea2b-40a6-ae56-20a475582811.png)   
 
@@ -68,11 +71,11 @@ I typed `cat ListExamples.java` to locate the merge method.
 ![image](https://user-images.githubusercontent.com/122419405/221387859-eb2f7671-c9c1-4867-b53a-3674c6fa2dbe.png)   
 
 If we look at the failure message, the problem is in line 42 of the ListExamples.java file.  
-I typed `wc -l ListExamples.java` to see how many lines I was dealing with.  
+I typed `wc -l ListExamples.java` to see how many lines I was dealing with (49).  
 
 ![image](https://user-images.githubusercontent.com/122419405/221388009-7a44d241-98fb-4435-8c2e-5cb84d2f4b37.png)  
 
-To make sure I counted the lines right (and edit the error later on), I typed `nano ListExamples.java` and manually counted the lines from bottom up.  
+I typed `nano ListExamples.java` to manually count the lines from bottom up.
 > Also, nano displays the number of lines of the file before you start moving around.  
 
 So, this is line 42.  
@@ -84,9 +87,11 @@ A picture says more than a thousand words, so here is what I found:
 
 ![image](https://user-images.githubusercontent.com/122419405/221388151-0a6bea6e-1089-40f0-b385-fdd13927ea75.png)  
 
-I changed that `1` for a `2` using `nano ListExamples.java` (I was already there).  
-To do that, I moved the `left` arrow key until the white pointer was on the right side of the `1` I wanted to delete.  
-> The white (square) pointer deletes and types on the space before it.  
+I changed that `1` for a `2` by typing `nano ListExamples.java` (I was already there).  
+> `nano` is a text editor built-in inside bash, we can use it to overwrite the file with a code that works.  
+
+To do that, I moved the `right` arrow key until the white pointer was on the right side of the `1` I wanted to delete.  
+> The white (square) pointer deletes and types on the space right before it.  
 
 ![image](https://user-images.githubusercontent.com/122419405/221388264-2e374cb5-1a19-4c56-81bc-68dc3a95bd4f.png)  
 I pressed the `<delete>` key and typed `2` instead.
@@ -116,10 +121,11 @@ Followed by another `git status` to make sure the modified file is not there any
 
 Last but not least, I typed `git push` to conclude this report for good.  
 ![image](https://user-images.githubusercontent.com/122419405/221389246-0628c06b-9a43-4637-aa95-539fadf09d48.png)  
+> `git push` updates the changes to the actual fork in github. No real changes have been made until you `git push`.  
 
 ## Bonus) - Double check your work.
 If we go to your fork page, you should see the changes display almost instantly.  
-To find it, click on the file we edited `ListExamples.java` in github.  
+To find it, click on the file we edited (`ListExamples.java`) in github.  
 ![image](https://user-images.githubusercontent.com/122419405/221389318-85a5711c-d4f8-4a52-b161-0ac4bb093fb4.png)  
 
 Then click on `History`  
@@ -128,20 +134,10 @@ Then click on `History`
 Click on the message you put when you commited the file:  
 ![image](https://user-images.githubusercontent.com/122419405/221389372-496346b7-5655-4e0a-a100-fdf43874dbdf.png)  
 
-And you should see everything in the most greatest super detail:  
+And you should see everything in the most beautiful, colorful greatest super detail:  
 ![image](https://user-images.githubusercontent.com/122419405/221389399-3cb314a9-691b-481d-b8a2-623ce959eb72.png)  
 
 That's it! It's funny how it actually takes 2 hours to explain 2 minutes of code. 
 I'm done with this file, Git push!
 
-
-
-
-
-
-
-
-
-
-
-summarize the commands you ran and what the effect of those keypresses were.
+![image](https://user-images.githubusercontent.com/122419405/221389539-fa3af41e-244e-457d-b93a-803db9517ffe.png)
