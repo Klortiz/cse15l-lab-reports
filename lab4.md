@@ -50,8 +50,8 @@ I cd-ed into lab7 (like this: `cd lab7`) so we can compile its java files and ru
 ![image](https://user-images.githubusercontent.com/122419405/221387196-00007ddf-ea2b-40a6-ae56-20a475582811.png)   
 
 If you go to [week 3](https://ucsd-cse15l-w23.github.io/week/week3/#:~:text=you%20run%20them%3A-,MAC%20USERS%3A,-local%20%24%20javac%20%2Dcp), you can find the code needed to compile all java files and run Junit.  
-The code is the following: 
-To compile, I typed `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`
+The code is the following:  
+To compile, I typed `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`  
 To run Junit, I typed `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore` + the name of the junit file (in this case, is `ListExamplesTests`.
 
 ![image](https://user-images.githubusercontent.com/122419405/221387385-e86a9a65-b005-4cfb-931f-7f9f15698661.png)  
@@ -71,26 +71,27 @@ I typed `cat ListExamples.java` to locate the merge method.
 ![image](https://user-images.githubusercontent.com/122419405/221387859-eb2f7671-c9c1-4867-b53a-3674c6fa2dbe.png)   
 
 If we look at the failure message, the problem is in line 42 of the ListExamples.java file.  
-I typed `wc -l ListExamples.java` to see how many lines I was dealing with (49).  
+I typed `wc -l ListExamples.java` to see how many lines I was dealing with (49) and eyeballed the lines up to the buggy line 42.  
 
 ![image](https://user-images.githubusercontent.com/122419405/221388009-7a44d241-98fb-4435-8c2e-5cb84d2f4b37.png)  
 
-I typed `nano ListExamples.java` to manually count the lines from bottom up.
+I typed `nano ListExamples.java`, and pressed the `<down>` arrow key all the way down to manually count the lines from bottom up and exactly locate the problem.
 > Also, nano displays the number of lines of the file before you start moving around.  
 
-So, this is line 42.  
+So, this is line 42 (the problem according to JUnit).  
 
 ![image](https://user-images.githubusercontent.com/122419405/221388092-aa9cbd21-cced-463d-b2c8-bf4ab34a9729.png)  
 
 My logic was: "The first while loop was tested in the Junit test and passed, what's different from the while loop that failed?"  
+
 A picture says more than a thousand words, so here is what I found:  
 
 ![image](https://user-images.githubusercontent.com/122419405/221388151-0a6bea6e-1089-40f0-b385-fdd13927ea75.png)  
 
-I changed that `1` for a `2` by typing `nano ListExamples.java` (I was already there).  
+I changed that `1` for a `2` by first entering the text editor `nano` by typing `nano ListExamples.java` (I was already there).  
 > `nano` is a text editor built-in inside bash, we can use it to overwrite the file with a code that works.  
 
-To do that, I moved the `right` arrow key until the white pointer was on the right side of the `1` I wanted to delete.  
+To make the change, I moved the `<right>` arrow key until the white pointer was on the right side of the `1` I wanted to delete.  
 > The white (square) pointer deletes and types on the space right before it.  
 
 ![image](https://user-images.githubusercontent.com/122419405/221388264-2e374cb5-1a19-4c56-81bc-68dc3a95bd4f.png)  
@@ -99,10 +100,10 @@ I pressed `Ctrl + O` to save the file.
 I pressed `<Enter>` to save the file with the same name.
 I pressed `Ctrl + X` to exit.
 
-Thank you, next!
+File is eddited, Thank you, next!
 
 ## 8) Run the tests, demonstrating that they now succeed.  
-I didn't want to type the above command to compile all java files and run the JUnit files (`javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` and `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTest`) so I just move the `up` arrow key until I found them in my history and pressed `<Enter>` for both of them (we need to compile java again because we made a change).  
+I didn't want to type the above command to compile all java files and run the JUnit files (`javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` and `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTest`) so I just move the `<up>` arrow key until I found them in my history and pressed `<Enter>` for both of them (we need to compile java again because we made a change).  
 
 ![image](https://user-images.githubusercontent.com/122419405/221388691-14819aad-c77f-4783-a8d9-41bb09883362.png)  
 It passes!  
@@ -110,13 +111,13 @@ It passes!
 ## 9) Commit and push the resulting change to your Github account (you can pick any commit message!)  
 ![image](https://user-images.githubusercontent.com/122419405/221388929-d538c24d-1479-4a3f-b515-ffe7af628286.png)  
 To commit and push the changes into the fork of my Github account;
-I typed `git add ListExamples.java` (I added the file I modified).
+I typed `git add ListExamples.java` (this command adds the file I modified to a queue of changes waiting to be commited).
 I typed `git status` to make sure the file I modified matches the file I'm adding.  
 
 ![image](https://user-images.githubusercontent.com/122419405/221389003-0cc9e756-e758-4bb4-8e1e-f95037bef560.png)  
 
 I then commited the file into the fork by typing `git commit -m "Updated For Lab Report 4 Purposes uwu"`.
-Followed by another `git status` to make sure the modified file is not there anymore (meaning it got commited).  
+Followed by another `git status` to make sure the modified file is not there anymore (meaning that my modification got commited).  
 ![image](https://user-images.githubusercontent.com/122419405/221389119-b786ec97-c55f-417b-84b1-5cccc91aa34e.png)  
 
 Last but not least, I typed `git push` to conclude this report for good.  
