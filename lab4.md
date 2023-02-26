@@ -49,17 +49,21 @@ To run Junit I typed `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar 
 
 ![image](https://user-images.githubusercontent.com/122419405/221387385-e86a9a65-b005-4cfb-931f-7f9f15698661.png)  
 > Notice how you don't write `.java` when you run the tester.  
+Next, debugging!
+
+## 7) Edit the code file to fix the failing test.  
+If we analyze the error message, we can track down the problem.  
+![image](https://user-images.githubusercontent.com/122419405/221387634-6fc24e27-36ee-4d8a-b103-97a4e9491b3e.png)  
+> I'm just using visual studio code to show what I mean, but this can be read from the same error message: "` at ListExamplesTests.testMerge2(ListExamplesTests.java:19)`".  
+
+Junit says that there's a problem with line 19, which uses the merge method.
+There's many ways to determine the problem with the merge method from the command line.
+I typed `cat ListExamples.java` to locate the merge method.
+![image](https://user-images.githubusercontent.com/122419405/221387859-eb2f7671-c9c1-4867-b53a-3674c6fa2dbe.png)  
 
 
+## 8) Run the tests, demonstrating that they now succeed.  
 
-
-
-
-
-
-## 7) Edit the code file to fix the failing test  
-
-## 8) Run the tests, demonstrating that they now succeed  
 
 ## 9) Commit and push the resulting change to your Github account (you can pick any commit message!)  
 
