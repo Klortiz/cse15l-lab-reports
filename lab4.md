@@ -20,8 +20,10 @@ To finally create the fork, give it a name (there's one by default already) and 
 ![image](https://user-images.githubusercontent.com/122419405/221386407-1b86d5b0-ffff-49bc-9436-04fc8e3290c5.png)
 Click the `Create Fork` button.
 
+## 3) The real deal - Start the timer!  
+![image](https://user-images.githubusercontent.com/122419405/221386475-7ef3c06c-74a2-408f-a58e-348531349398.png)  
+> It's a big image so you know where this competition actually starts among all the easy-to-get-lost pictures in this lab report.
 
-## 3) The real deal Start the timer!  
 
 ## 4) Log into ieng6  
 
