@@ -14,6 +14,7 @@ If you didn't have a fork, or you just deleted the old one, go to the [original 
 
 ## 2) Setup - Fork the repository  
 Once you clicked [that link](https://github.com/ucsd-cse15l-w23/lab7), click the `Fork` button in the upper right hand corner.  
+
 ![image](https://user-images.githubusercontent.com/122419405/221386285-38ec0078-a659-4b80-96c4-ff574b7ca982.png)  
 
 The last step to create the fork is to give it a name (there's one by default already) and an optional description.  
@@ -31,6 +32,15 @@ Click the `Create Fork` button.
 > Note that if you want to avoid all of this, you can refer to the class website to [set up ssh keys for ieng6 and github](https://ucsd-cse15l-w23.github.io/week/week7/#:~:text=Command%2DLine%20Setup-,Generating%20SSH%20Keys%20for%20ieng6,-With%20the%20setup).  
 
 ## 5) Clone your fork of the repository from your Github account  
+Because you will work with the fork you just made, on its main page, click on `code` to copy the `ssh` link to clone.  
+![image](https://user-images.githubusercontent.com/122419405/221386972-614837d4-8bf3-4158-8467-4123d5ba6689.png)  
+
+On the terminal, already connected to the server, type `git clone` and paste the ssh link. Hit `Enter`.  
+![image](https://user-images.githubusercontent.com/122419405/221387045-7d9dbdae-60fd-42bd-b0c3-6b8c858fd136.png)  
+
+
+
+
 
 ## 6) Run the tests, demonstrating that they fail  
 
