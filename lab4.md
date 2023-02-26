@@ -41,6 +41,7 @@ Because you will work with the fork you just made, go to its main page and click
 ![image](https://user-images.githubusercontent.com/122419405/221386972-614837d4-8bf3-4158-8467-4123d5ba6689.png)  
 
 On the terminal, already connected to the server, type `git clone` and paste the ssh link. Hit `<Enter>`.  
+
 ![image](https://user-images.githubusercontent.com/122419405/221387045-7d9dbdae-60fd-42bd-b0c3-6b8c858fd136.png)  
 > I always type `ls` to know what changed, where I'm at, and to display the names of what I will be working on. It's a good habit.  
 
@@ -95,10 +96,10 @@ To make the change, I moved the `<right>` arrow key until the white pointer was 
 > The white (square) pointer deletes and types on the space right before it.  
 
 ![image](https://user-images.githubusercontent.com/122419405/221388264-2e374cb5-1a19-4c56-81bc-68dc3a95bd4f.png)  
-I pressed the `<delete>` key and typed `2` instead.
-I pressed `Ctrl + O` to save the file.
-I pressed `<Enter>` to save the file with the same name.
-I pressed `Ctrl + X` to exit.
+- I pressed the `<delete>` key and typed `2` instead.  
+- I pressed `Ctrl + O` to save the file.  
+- I pressed `<Enter>` to save the file with the same name.  
+- I pressed `Ctrl + X` to exit.  
 
 File is eddited, Thank you, next!
 
@@ -111,16 +112,20 @@ It passes!
 ## 9) Commit and push the resulting change to your Github account (you can pick any commit message!)  
 ![image](https://user-images.githubusercontent.com/122419405/221388929-d538c24d-1479-4a3f-b515-ffe7af628286.png)  
 To commit and push the changes into the fork of my Github account;
-I typed `git add ListExamples.java` (this command adds the file I modified to a queue of changes waiting to be commited).
+I typed `git add ListExamples.java`  
+> (this command adds the file I modified to a queue of changes waiting to be commited).  
+
 I typed `git status` to make sure the file I modified matches the file I'm adding.  
 
 ![image](https://user-images.githubusercontent.com/122419405/221389003-0cc9e756-e758-4bb4-8e1e-f95037bef560.png)  
 
-I then commited the file into the fork by typing `git commit -m "Updated For Lab Report 4 Purposes uwu"`.
+I then commited the file into the fork by typing `git commit -m "Updated For Lab Report 4 Purposes uwu"`   
 Followed by another `git status` to make sure the modified file is not there anymore (meaning that my modification got commited).  
+
 ![image](https://user-images.githubusercontent.com/122419405/221389119-b786ec97-c55f-417b-84b1-5cccc91aa34e.png)  
 
 Last but not least, I typed `git push` to conclude this report for good.  
+
 ![image](https://user-images.githubusercontent.com/122419405/221389246-0628c06b-9a43-4637-aa95-539fadf09d48.png)  
 > `git push` updates the changes to the actual fork in github. No real changes have been made until you `git push`.  
 
