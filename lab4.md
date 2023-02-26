@@ -25,10 +25,10 @@ Click the `Create Fork` button.
 > It's a big image so you know where this competition actually starts among all the easy-to-get-lost pictures in this lab report.
 
 ## 4) Log into ieng6.   
-- I opened Visual Studio Code's terminal using `Ctrl + back-quote`. 
+- I opened Visual Studio Code's terminal using `Ctrl + back-quote` 
 - Typed `ssh` `cs15lwi23[your unique letters here]@ieng6.ucsd.edu` 
 - Pressed `<Enter>`  
-> Note that, if I didn't hava an ssh key, I would've had to:
+> Note that if I didn't have an ssh key, I would've had to:
 > - Type password.
 > - Press `<Enter>`  
 
