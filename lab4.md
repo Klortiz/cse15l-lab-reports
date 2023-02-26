@@ -10,19 +10,29 @@
 If you have a fork already, go to its settings in github and scroll all the way down to delete it:
 ![image](https://user-images.githubusercontent.com/122419405/220795828-09b36163-aa98-4582-847e-803a14accb0e.png)  
 ![image](https://user-images.githubusercontent.com/122419405/220795947-e3555972-7136-4fb2-9ddc-cec8deb48a20.png)  
-
-If you didn't have a fork, or you just deleted the old one, go to the [original repository ](https://github.com/ucsd-cse15l-w23/lab7) 
-
-
-
+If you didn't have a fork, or you just deleted the old one, go to the [original repository ](https://github.com/ucsd-cse15l-w23/lab7) to fork it.  
 
 ## 2) Setup - Fork the repository  
+Once you clicked [that link](https://github.com/ucsd-cse15l-w23/lab7), click the `Fork` button in the upper right hand corner.  
+![image](https://user-images.githubusercontent.com/122419405/221386285-38ec0078-a659-4b80-96c4-ff574b7ca982.png)  
+
+To finally create the fork, give it a name (there's one by default already) and an optional description.  
+![image](https://user-images.githubusercontent.com/122419405/221386407-1b86d5b0-ffff-49bc-9436-04fc8e3290c5.png)
+Click the `Create Fork` button.
+
+
 ## 3) The real deal Start the timer!  
+
 ## 4) Log into ieng6  
+
 ## 5) Clone your fork of the repository from your Github account  
+
 ## 6) Run the tests, demonstrating that they fail  
+
 ## 7) Edit the code file to fix the failing test  
+
 ## 8) Run the tests, demonstrating that they now succeed  
+
 ## 9) Commit and push the resulting change to your Github account (you can pick any commit message!)  
 
 
