@@ -40,7 +40,8 @@ Click the `Create Fork` button.
 Because you will work with the fork you just made, go to its main page and click on `code` to copy the `ssh` link to clone.  
 ![image](https://user-images.githubusercontent.com/122419405/221386972-614837d4-8bf3-4158-8467-4123d5ba6689.png)  
 
-On the terminal, already connected to the server, type `git clone` and paste the ssh link. Hit `<Enter>`.  
+On the terminal, already connected to the server, type `git clone` and paste the ssh link.  
+Hit `<Enter>`   
 
 ![image](https://user-images.githubusercontent.com/122419405/221387045-7d9dbdae-60fd-42bd-b0c3-6b8c858fd136.png)  
 > I always type `ls` to know what changed, where I'm at, and to display the names of what I will be working on. It's a good habit.  
@@ -76,10 +77,10 @@ I typed `wc -l ListExamples.java` to see how many lines I was dealing with (49) 
 
 ![image](https://user-images.githubusercontent.com/122419405/221388009-7a44d241-98fb-4435-8c2e-5cb84d2f4b37.png)  
 
-I typed `nano ListExamples.java`, and pressed the `<down>` arrow key all the way down to manually count the lines from bottom up and exactly locate the problem.
-> Also, nano displays the number of lines of the file before you start moving around.  
+I typed `nano ListExamples.java` and pressed the `<down>` arrow key all the way down (49 times) to manually count the lines from bottom up and exactly locate the problem.
+> Also, nano displays the number of lines of the file before you even start moving around, but because I didn't realize when I did this the first time, I'll report what I did instead.
 
-So, this is line 42 (the problem according to JUnit).  
+So, from line 49, 7 `<up>` keys got me to this is line 42 (the problem according to JUnit).  
 
 ![image](https://user-images.githubusercontent.com/122419405/221388092-aa9cbd21-cced-463d-b2c8-bf4ab34a9729.png)  
 
@@ -92,7 +93,7 @@ A picture says more than a thousand words, so here is what I found:
 I changed that `1` for a `2` by first entering the text editor `nano` by typing `nano ListExamples.java` (I was already there).  
 > `nano` is a text editor built-in inside bash, we can use it to overwrite the file with a code that works.  
 
-To make the change, I moved the `<right>` arrow key until the white pointer was on the right side of the `1` I wanted to delete.  
+To make the change, I moved the `<right>` arrow key until the white pointer was on the right side of the `1` I wanted to delete (about 10 times).  
 > The white (square) pointer deletes and types on the space right before it.  
 
 ![image](https://user-images.githubusercontent.com/122419405/221388264-2e374cb5-1a19-4c56-81bc-68dc3a95bd4f.png)  
@@ -104,7 +105,8 @@ To make the change, I moved the `<right>` arrow key until the white pointer was 
 File is eddited, Thank you, next!
 
 ## 8) Run the tests, demonstrating that they now succeed.  
-I didn't want to type the above command to compile all java files and run the JUnit files (`javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` and `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTest`) so I just move the `<up>` arrow key until I found them in my history and pressed `<Enter>` for both of them (we need to compile java again because we made a change).  
+I didn't want to type the above command to compile all java files and run the JUnit files (`javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` and `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTest`) so I just move the `<up>` arrow key until I found them in my history (about 13 times in total) and pressed `<Enter>` for both of them.  
+> Note that the reason why we need to compile java again because we made a change.  
 
 ![image](https://user-images.githubusercontent.com/122419405/221388691-14819aad-c77f-4783-a8d9-41bb09883362.png)  
 It passes!  
@@ -113,7 +115,7 @@ It passes!
 ![image](https://user-images.githubusercontent.com/122419405/221388929-d538c24d-1479-4a3f-b515-ffe7af628286.png)  
 To commit and push the changes into the fork of my Github account;
 I typed `git add ListExamples.java`  
-> (this command adds the file I modified to a queue of changes waiting to be commited).  
+> (this command adds the file I modified to a queue of changes that are waiting to be commited).  
 
 I typed `git status` to make sure the file I modified matches the file I'm adding.  
 
