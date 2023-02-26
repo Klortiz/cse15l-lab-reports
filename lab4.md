@@ -54,7 +54,7 @@ I cd-ed into lab7 (like this: `cd lab7`) so we can compile its java files and ru
 If you go to [week 3](https://ucsd-cse15l-w23.github.io/week/week3/#:~:text=you%20run%20them%3A-,MAC%20USERS%3A,-local%20%24%20javac%20%2Dcp), you can find the code needed to compile all java files and run Junit.  
 The code is the following:  
 - To compile, I typed `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`  
-- To run Junit, I typed `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore` + the name of the junit file (in this case, is `ListExamplesTests`.
+- To run Junit, I typed `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore` + the name of the junit file (in this case, is `ListExamplesTests`).
 
 ![image](https://user-images.githubusercontent.com/122419405/221387385-e86a9a65-b005-4cfb-931f-7f9f15698661.png)  
 > Notice how you don't write `.java` when you run the tester.  
