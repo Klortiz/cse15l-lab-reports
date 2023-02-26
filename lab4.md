@@ -138,7 +138,8 @@ Click on the message you put when you commited the file:
 And you should see everything in the most beautiful, colorful greatest super detail:  
 ![image](https://user-images.githubusercontent.com/122419405/221389399-3cb314a9-691b-481d-b8a2-623ce959eb72.png)  
 
-That's it! It's funny how it actually takes 2 hours to explain 2 minutes of code. 
+That's it! It's funny how it actually takes 2 hours to explain 2 minutes of code.  
+
 I'm done with this file, Git push!
 
 ![image](https://user-images.githubusercontent.com/122419405/221389539-fa3af41e-244e-457d-b93a-803db9517ffe.png)
