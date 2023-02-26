@@ -10,13 +10,13 @@
 If you have a fork already, go to its settings in github and scroll all the way down to delete it:
 ![image](https://user-images.githubusercontent.com/122419405/220795828-09b36163-aa98-4582-847e-803a14accb0e.png)  
 ![image](https://user-images.githubusercontent.com/122419405/220795947-e3555972-7136-4fb2-9ddc-cec8deb48a20.png)  
-If you didn't have a fork, or you just deleted the old one, go to the [original repository ](https://github.com/ucsd-cse15l-w23/lab7) to fork it.  
+If you didn't have a fork, or you just deleted the old one, go to the [original repository ](https://github.com/ucsd-cse15l-w23/lab7) to fork it (details below).  
 
 ## 2) Setup - Fork the repository  
 Once you clicked [that link](https://github.com/ucsd-cse15l-w23/lab7), click the `Fork` button in the upper right hand corner.  
 ![image](https://user-images.githubusercontent.com/122419405/221386285-38ec0078-a659-4b80-96c4-ff574b7ca982.png)  
 
-To finally create the fork, give it a name (there's one by default already) and an optional description.  
+The last step to create the fork is to give it a name (there's one by default already) and an optional description.  
 ![image](https://user-images.githubusercontent.com/122419405/221386407-1b86d5b0-ffff-49bc-9436-04fc8e3290c5.png)
 Click the `Create Fork` button.
 
