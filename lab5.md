@@ -153,7 +153,8 @@ fi
 > ChatGPT actually explains it really well, too!  
 > ![image](https://user-images.githubusercontent.com/122419405/224587411-db3f7333-a81e-47ed-9d3e-38fc81eb9a86.png)  
 
-Here's the screenshot of a submission that failed the test!  
+Here's the screenshot of a submission that failed the test!   
+
 ![image](https://user-images.githubusercontent.com/122419405/224587537-038b15eb-68f2-4847-bcbb-b57eebf5ab62.png)  
 
 
