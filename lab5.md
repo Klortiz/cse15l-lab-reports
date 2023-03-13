@@ -72,7 +72,8 @@ Here is a screenshot of it working!
 
 I then have 4 if statements that check the files inside the student's submission:  
 If a file called `ListExamples.java` is found, print so.  
-Else, exit 1 (which means there was a general, small error. In this case, there was no file with the exact name `ListExamples.java` found.
+Else, `exit 1` (which means that there was a general, small error).  
+> In this case, the error is that there was no such file with the exact name `ListExamples.java` found.
 ```
 if [[ -f ListExamples.java ]]
 then
