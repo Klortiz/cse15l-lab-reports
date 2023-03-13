@@ -127,7 +127,8 @@ To grade, I copy my tester (which is **one** directory before the current direct
 cp ../TestListExamples.java 'TestListExamples.java'
 ```
 
-After everything I need (my tester and the student submission) is in my current working directory, I proceed to compile it all, using thae stored path I created at the beginning of my script.
+After everything I need (my tester and the student submission) is in my current working directory,  
+I proceed to compile it all using the `CPATH` variable I created at the beginning of my script (which stores the JUnit path used to compile and run the tests).
 ```
 javac -cp $CPATH *.java
 ```  
@@ -140,7 +141,7 @@ java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > out.txt 2>&1
 
 With the same `grep -Fq` logic that I used in previous if statements, I know that an `OK` will only appear if you passed all the tests, so I aimed to look for that.  
 Therefore, If there's an `OK` in `out.txt`, you passed!  
-Else, I let the student know that there's something wrong, to try again, and then I show the output using `cat`, which contains the error information.  
+Else, I let the student know that 1) there's something wrong, 2) to try again, and then I 3) show the output using `cat`, which contains the error information.  
 
 ```
 if grep -Fq "OK" out.txt
