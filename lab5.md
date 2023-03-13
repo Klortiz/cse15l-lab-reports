@@ -49,3 +49,25 @@ then
         exit 3
 fi  
 ```  
+
+First, we store the path we want need to compile the junit tests into a variable so we don't have to type it again.  
+```
+CPATH='.;../lib/hamcrest-core-1.3.jar;../lib/junit-4.13.2.jar'
+```  
+
+Then we use rm -rf to recursively remove any previous submission we stored in the student-submission directory.  
+Immediately after, I git clone the student submission into that folder and print "Finished cloning" usinng echo.  
+> I cd into the student-submission directory that I just created (where the student submission is stored) so the code after this can work around the student submission.  
+> In other words, I made the student submission's directory my new working directory so I can work with it.  
+
+```
+rm -rf student-submission
+git clone $1 student-submission
+echo 'Finished cloning'
+
+cd student-submission
+```  
+Here is a screenshot of it working!  
+![image](https://user-images.githubusercontent.com/122419405/224583725-a6fb6b1e-c117-485c-89df-3fd846e5dd05.png)  
+
+
