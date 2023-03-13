@@ -165,11 +165,14 @@ So, putting it all together, here's a cheap, Gradescope imitation!
 > Fails  
 
 ![image](https://user-images.githubusercontent.com/122419405/224590655-e375b97a-f46c-4a99-bb34-e6dc067f2885.png)  
-> Passes, like this Last Lab Report 😎
+> Passes, like this Last Lab Report 😎  
+
+The other repositories have similar outputs, showing the specific errors that JUnit threw at their code.  
+If there's an error while checking files, the code just finishes cloning and exits, like this:  
+![image](https://user-images.githubusercontent.com/122419405/224594523-8fe18e62-507b-4f92-bab4-19b9ee39dc1c.png)  
+
+I enjoyed this quarter so much, I felt a little lost towards the end because the pace became faster and there was more to cover, but lab reports kept me sharp!  
+Have a good rest of your quarter;)
 
 ![image](https://user-images.githubusercontent.com/122419405/224593274-029edc8c-1a45-481c-a256-07a940bda152.png)  
-
-
-
-
 
