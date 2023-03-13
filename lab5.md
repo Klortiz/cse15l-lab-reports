@@ -167,6 +167,8 @@ So, putting it all together, here's a cheap, Gradescope imitation!
 ![image](https://user-images.githubusercontent.com/122419405/224590655-e375b97a-f46c-4a99-bb34-e6dc067f2885.png)  
 > Passes, like this Last Lab Report 😎
 
+![image](https://user-images.githubusercontent.com/122419405/224593274-029edc8c-1a45-481c-a256-07a940bda152.png)  
+
 
 
 
