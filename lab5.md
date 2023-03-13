@@ -68,6 +68,41 @@ echo 'Finished cloning'
 cd student-submission
 ```  
 Here is a screenshot of it working!  
-![image](https://user-images.githubusercontent.com/122419405/224583725-a6fb6b1e-c117-485c-89df-3fd846e5dd05.png)  
+![image](https://user-images.githubusercontent.com/122419405/224583725-a6fb6b1e-c117-485c-89df-3fd846e5dd05.png)   
+
+```
+if [[ -f ListExamples.java ]]
+then
+  echo "found ListExamples.java!"
+  else exit 1
+fi
+```  
+
+
+``` 
+cat ListExamples.java > class.txt
+if grep -Fq "class ListExamples {" class.txt 
+then
+    echo "found Class ListExamples"
+    else exit 2
+fi  
+```  
+
+```
+if grep -Fq "static List<String> filter(List<String> list, StringChecker sc)" class.txt 
+then
+    echo "found filter method!"
+    else exit 2
+fi
+```  
+
+```
+if grep -Fq "static List<String> merge(List<String> list1, List<String> list2)" class.txt 
+then
+    echo "found merge method!"
+    else exit 2
+fi  
+```  
+
 
 
