@@ -155,6 +155,17 @@ fi
 
 Here's the screenshot of a submission that failed the test!   
 
-![image](https://user-images.githubusercontent.com/122419405/224587537-038b15eb-68f2-4847-bcbb-b57eebf5ab62.png)  
+![image](https://user-images.githubusercontent.com/122419405/224587537-038b15eb-68f2-4847-bcbb-b57eebf5ab62.png)   
+
+So, putting it all together, here's a cheap, Gradescope imitation!  
+
+![image](https://user-images.githubusercontent.com/122419405/224590548-47a67164-6e2b-458a-ad5f-6ba307061ee2.png)  
+> Fails  
+
+![image](https://user-images.githubusercontent.com/122419405/224590655-e375b97a-f46c-4a99-bb34-e6dc067f2885.png)  
+> Passes, like this Last Lab Report 😎
+
+
+
 
 
