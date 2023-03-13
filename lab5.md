@@ -82,7 +82,7 @@ then
 fi
 ```  
 
-If there is a `ListExamples.java`, I cat that file into one called `class.txt` just so I have access to all the characters comprising this document.  
+If there is a `ListExamples.java`, I `cat` that file into one called `class.txt`, just so I have access to all the characters comprising this document.  
 Why would I need that? For my next if statement!  
 
 If `grep` finds the fixed string I put there (which is a class signature I want the student to have), then it means the class I want the student to have exists, and I can move on to grade it.
