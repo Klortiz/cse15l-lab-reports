@@ -118,14 +118,28 @@ fi
 Here's a screenshot of it working!  
 ![image](https://user-images.githubusercontent.com/122419405/224585336-10f91b07-dc70-4039-a35e-67354890e03a.png)  
 
+Finally, I proceed to actually grade the assignment — run JUnit tests on it.  
 
+To grade, I copy my tester (which is **one** directory before the current directory (that's why I used `../` and then the name of my tester)) using `cp` into the current directory.  
 
 ```  
 cp ../TestListExamples.java 'TestListExamples.java'
-
-javac -cp $CPATH *.java
-java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > out.txt 2>&1
 ```
+
+After everything I need (my tester and the student submission) is in my current working directory, I proceed to compile it all, using thae stored path I created at the beginning of my script.
+```
+javac -cp $CPATH *.java
+```  
+
+I run my tester (I grade the student submission) and redirect the output to `out.txt` so I can show the results.  
+I use the error redirection `2>&1` so it doesn't throw everything at the terminal, and so that I can show the student what went wrong and why.
+```
+java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > out.txt 2>&1
+```  
+
+With the same `grep -Fq` logic that I used in previous if statements, I know that an `OK` will only appear if you passed all the tests, so I aimed to look for that.  
+Therefore, If there's an `OK` in `out.txt`, you passed!  
+Else, I let the student know that there's something wrong, to try again, and then I show the output using `cat`, which contains the error information.  
 
 ```
 if grep -Fq "OK" out.txt
@@ -135,4 +149,11 @@ then
         exit 3
 fi  
 ```  
+> The format to use `cat` here is `"$(cat out.txt)"` because the output of the command inside the parenthesis will replace the entire thing.  
+> ChatGPT actually explains it really well, too!  
+> ![image](https://user-images.githubusercontent.com/122419405/224587411-db3f7333-a81e-47ed-9d3e-38fc81eb9a86.png)  
+
+Here's the screenshot of a submission that failed the test!  
+![image](https://user-images.githubusercontent.com/122419405/224587537-038b15eb-68f2-4847-bcbb-b57eebf5ab62.png)  
+
 
